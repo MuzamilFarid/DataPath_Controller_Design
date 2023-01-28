@@ -17,6 +17,6 @@ always @(posedge clk or negedge rst) begin
      add_out <= A; 
 end
 
-out_a <= add_out;
+assign out_a = add_out;
 
-endmodule;
+endmodule

@@ -3,7 +3,7 @@ module regP(
  input clk,
  input rst,
  input ld_p,
- input [14:0] P
+ input [14:0] P,
  input clr,
  output [14:0] out_p
 );
@@ -16,11 +16,11 @@ always @(posedge clk or negedge rst) begin
    else if(clr)
      add_out <= 15'b0;
    else if(ld_p)
-     add_out <= data_in;    
+     add_out <= P;    
 
 end
 
-out_p <= add_out;
+assign out_p = add_out;
 
 
 

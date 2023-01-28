@@ -7,7 +7,7 @@ output eqz
 );
 
 // Interface to control path
-wire[14:0] bus_in,
+wire[14:0] bus_in;
 wire ld_a;
 wire ld_b;
 wire ld_p;
@@ -46,7 +46,7 @@ regB B(
 
   .clk(clk),
   .rst (rst),
-  .B (B),
+  .B (bus_in),
   .ld_b (ld_b),
   .out_b (out_b),
   .dec (dec_b)
