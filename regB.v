@@ -4,12 +4,13 @@ module regB (
   input rst,
   input ld_b,
   input dec,
+  output eqz,
   output[14:0] out_b
 
 );
 
 reg [14:0] add_out;
-reg eqz_r;
+
 
 always @(posedge clk or negedge rst) begin
     

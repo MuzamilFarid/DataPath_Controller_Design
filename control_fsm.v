@@ -3,6 +3,7 @@ module controlfsm(
  input clk,
  input rst,
  input start,
+ input eqz,
  output ld_a,
  output ld_p,
  output ld_b,
@@ -30,7 +31,8 @@ case(state)
            state<= S1;
     S1:        
 
-
+endcase;
+end
 
 end
 
