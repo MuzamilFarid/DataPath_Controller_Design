@@ -17,10 +17,11 @@ wire out_a;
 wire out_p;
 wire out_b;
 wire [14:0] adder_out;
+wire start;
 
 // assigning data_in to wire, not necessary though
 assign bus_in = data_in;
-
+assign start  = 1'b1; 
 
 // Registers instantiations
 
@@ -51,6 +52,13 @@ regB B(
   .out_b (out_b),
   .dec (dec_b)
 );
+
+ controlfsm fsm (
+   .clk(clk),
+   .rst(rst),
+   .ld_a(ld_a),
+   .start(start)
+ );
 
  // Adder, adding A & P 
 

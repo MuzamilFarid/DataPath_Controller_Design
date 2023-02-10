@@ -13,6 +13,8 @@ module controlfsm(
 );
 
 reg[2:0] state;
+reg ld_a_r;
+reg ld_b_r;
 
 parameter S0=3'b000;
 parameter S1=3'b001;
@@ -29,10 +31,41 @@ case(state)
 
     S0: if(start)
            state<= S1;
-    S1:        
+    S1:   state <= S2;
 
-endcase;
+    S2:  state <= S3;
+    S3:   if(eqz)
+           state <= S4;
+           else 
+           state <= S3;
+    S4:   state <= S4;
+
+    default: state <= S0;       
+
+endcase
 end
+
+end
+
+always@(state) begin
+
+ case (state) 
+     S0: begin
+         ld_a_r = 1'b0;
+         ld_b_r = 1'b0;
+       //  ld_p = 1'b0;
+        // dec  = 1'b0;
+        // clr  = 1'b0;
+     end 
+     S1:  ld_a_r = 1'b1; 
+    
+     S2:  begin ld_a_r = 1'b0;
+                ld_b_r = 1'b1;
+     end
+  default : ld_a_r = 1'b0;
+ endcase
+
+
 
 end
 
