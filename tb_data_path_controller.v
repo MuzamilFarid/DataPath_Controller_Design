@@ -20,8 +20,7 @@ clk <= 1'b1;
  #50; 
 end
 
-always begin
-
+always@(posedge clk) begin
 data_in <= 15'b0;
 #100
 data_in <= 15'd155;

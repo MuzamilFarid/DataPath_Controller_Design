@@ -26,8 +26,12 @@ add wave -noupdate /tb/DUT/fsm/clr
 add wave -noupdate /tb/DUT/fsm/state
 add wave -noupdate /tb/DUT/fsm/ld_a_r
 add wave -noupdate /tb/DUT/fsm/ld_b_r
+add wave -noupdate /tb/DUT/A/out_a
+add wave -noupdate /tb/DUT/A/add_out
+add wave -noupdate /tb/DUT/A/A
+add wave -noupdate /tb/DUT/A/ld_a
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {250 ps} 0}
+WaveRestoreCursors {{Cursor 1} {150 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -43,4 +47,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {800 ps}
+WaveRestoreZoom {0 ps} {400 ps}

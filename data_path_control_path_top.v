@@ -37,7 +37,7 @@ regA A(
 regP P(
     .clk (clk),
     .rst (rst),
-    .P   (bus_in),
+    .P   (adder_out),
     .ld_p (ld_p),
     .out_p (out_p),
     .clr (clr_p)
@@ -57,7 +57,11 @@ regB B(
    .clk(clk),
    .rst(rst),
    .ld_a(ld_a),
-   .start(start)
+   .start(start),
+   .ld_b(ld_b),
+   .ld_p(ld_p),
+   .clr(clr_p),
+   .dec(dec_b)
  );
 
  // Adder, adding A & P 
