@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design
+vadder
+Z1 !s110 1676227066
+!i10b 1
+!s100 >afemPmk?RgPOSK0ESO6I0
+Ih=`AREO>>?3GIhF[j5FYL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676226914
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/adder.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1676227066.000000
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/adder.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcontrolfsm
+R1
+!i10b 1
+!s100 0nG0T0o?E7XLkmo5dL^RQ2
+I[?R8?`SXnC^;>SQ6n:[Ye1
+R2
+R0
+w1676220764
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/control_fsm.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/control_fsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/control_fsm.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/control_fsm.v|
+!i113 1
+R5
+R6
+vmultiplication_add
+R1
+!i10b 1
+!s100 ]EBn6SWLFB:QjZX1d2o9a1
+InhnQWE68V:5hZAg:z=jVB1
+R2
+R0
+w1676227006
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/data_path_control_path_top.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/data_path_control_path_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/data_path_control_path_top.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/data_path_control_path_top.v|
+!i113 1
+R5
+R6
+vregA
+R1
+!i10b 1
+!s100 Nj9CoW:3kzhR97LJLkQNE3
+IGhk>k]QH5G9QzkA`FC48=3
+R2
+R0
+w1676064607
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regA.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regA.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regA.v|
+!i113 1
+R5
+R6
+nreg@a
+vregB
+R1
+!i10b 1
+!s100 SVEW=K82NlZb>1G><2T0z3
+IUOodCeUhXRzBCPnL;R=OW0
+R2
+R0
+w1675630415
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regB.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regB.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regB.v|
+!i113 1
+R5
+R6
+nreg@b
+vregP
+R1
+!i10b 1
+!s100 T<B>gWQ;QCe]3D[YL1SOF3
+I=M5C;89hd>`Z[8EQZBj=^0
+R2
+R0
+w1676224502
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regP.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regP.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regP.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/regP.v|
+!i113 1
+R5
+R6
+nreg@p
+vtb
+!s110 1676227067
+!i10b 1
+!s100 oz_S5NQ9@13B>M9XFmU6g3
+I2mmihjVjoeg]VBoVUB<:a3
+R2
+R0
+w1676226502
+8C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/tb_data_path_controller.v
+FC:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/tb_data_path_controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/tb_data_path_controller.v|
+!s90 -reportprogress|300|-work|work|C:/Users/MuzamilFarid/Desktop/Datapath_Controller_Design/tb_data_path_controller.v|
+!i113 1
+R5
+R6
