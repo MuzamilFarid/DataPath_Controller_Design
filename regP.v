@@ -17,7 +17,6 @@ always @(posedge clk or negedge rst) begin
      add_out <= 15'b0;
    else if(ld_p)
      add_out <= P;    
-
 end
 
 assign out_p = add_out;

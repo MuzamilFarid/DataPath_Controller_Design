@@ -36,7 +36,7 @@ case(state)
         state <= S2;
 
     S2:  state <= S3;
-    S3:   if(!eqz)
+    S3:   if(eqz)
            state <= S4;
            else 
            state <= S3;

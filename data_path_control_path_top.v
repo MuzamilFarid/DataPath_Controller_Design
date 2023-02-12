@@ -2,8 +2,7 @@ module multiplication_add (
 
 input clk,
 input rst,
-input [14:0] data_in,
-output eqz
+input [14:0] data_in
 );
 
 // Interface to control path
@@ -13,11 +12,12 @@ wire ld_b;
 wire ld_p;
 wire dec_b;
 wire clr_p;
-wire out_a;
-wire out_p;
-wire out_b;
+wire[14:0] out_a;
+wire[14:0] out_p;
+wire[14:0] out_b;
 wire [14:0] adder_out;
 wire start;
+wire eqz;
 
 // assigning data_in to wire, not necessary though
 assign bus_in = data_in;
@@ -50,7 +50,8 @@ regB B(
   .B (bus_in),
   .ld_b (ld_b),
   .out_b (out_b),
-  .dec (dec_b)
+  .dec (dec_b),
+  .eqz(eqz)
 );
 
  controlfsm fsm (
@@ -61,12 +62,21 @@ regB B(
    .ld_b(ld_b),
    .ld_p(ld_p),
    .clr(clr_p),
-   .dec(dec_b)
+   .dec(dec_b),
+   .eqz(eqz)
+ );
+
+ adder adderout(
+
+  .out_a(out_a),
+  .out_p(out_p),
+  .out(adder_out)
  );
 
  // Adder, adding A & P 
+ // make a separate module for adder
 
-  assign adder_out =  out_a + out_p;
+ // assign adder_out =  out_a + out_p;
 
 
 

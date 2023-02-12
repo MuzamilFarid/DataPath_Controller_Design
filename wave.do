@@ -10,10 +10,10 @@ add wave -noupdate /tb/DUT/ld_b
 add wave -noupdate /tb/DUT/ld_p
 add wave -noupdate /tb/DUT/dec_b
 add wave -noupdate /tb/DUT/clr_p
-add wave -noupdate /tb/DUT/out_a
-add wave -noupdate /tb/DUT/out_p
-add wave -noupdate /tb/DUT/out_b
-add wave -noupdate /tb/DUT/adder_out
+add wave -noupdate -radix unsigned /tb/DUT/out_a
+add wave -noupdate -color Gold -radix unsigned /tb/DUT/out_p
+add wave -noupdate -color {Yellow Green} -radix unsigned /tb/DUT/out_b
+add wave -noupdate -color Red -radix unsigned /tb/DUT/adder_out
 add wave -noupdate /tb/DUT/fsm/clk
 add wave -noupdate /tb/DUT/fsm/rst
 add wave -noupdate /tb/DUT/fsm/start
@@ -30,8 +30,19 @@ add wave -noupdate /tb/DUT/A/out_a
 add wave -noupdate /tb/DUT/A/add_out
 add wave -noupdate /tb/DUT/A/A
 add wave -noupdate /tb/DUT/A/ld_a
+add wave -noupdate /tb/DUT/P/clk
+add wave -noupdate /tb/DUT/P/rst
+add wave -noupdate /tb/DUT/P/ld_p
+add wave -noupdate /tb/DUT/P/P
+add wave -noupdate /tb/DUT/P/clr
+add wave -noupdate /tb/DUT/P/out_p
+add wave -noupdate /tb/DUT/P/add_out
+add wave -noupdate /tb/DUT/adderout/out_a
+add wave -noupdate /tb/DUT/adderout/out_p
+add wave -noupdate /tb/DUT/adderout/out
+add wave -noupdate -radix unsigned /tb/DUT/B/out_b
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {150 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1450 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -47,4 +58,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {400 ps}
+WaveRestoreZoom {0 ps} {2476 ps}

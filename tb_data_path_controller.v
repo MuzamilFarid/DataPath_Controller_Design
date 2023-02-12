@@ -20,12 +20,11 @@ clk <= 1'b1;
  #50; 
 end
 
-always@(posedge clk) begin
+always@(posedge clk or posedge rst) begin
+  if(!rst)
 data_in <= 15'b0;
-#100
-data_in <= 15'd155;
-#150;
-data_in <= 15'd200;
+  else
+data_in <= 15'd10;
 end
 
 
